@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="479px" viewBox="0 0 32 479" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-704.000000, -331.000000)">
+            <g id="Group" transform="translate(705.857864, 331.000000)">
+                <polygon id="Rectangle-Copy" stroke="#151515" stroke-width="2" transform="translate(14.142136, 462.872106) rotate(45.000000) translate(-14.142136, -462.872106) " points="4.15220601 452.882176 24.1421356 452.872106 24.1320652 472.862036 4.14213562 472.872106"></polygon>
+                <rect id="Rectangle" fill="#151515" x="13.1421356" y="-5.68434189e-14" width="2" height="449" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

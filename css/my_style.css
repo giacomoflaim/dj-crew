@@ -1,0 +1,279 @@
+
+@font-face {
+    font-family: 'Neue Metana';
+    src: url('./font/NeueMetana-Bold.eot');
+    src: url('./font/NeueMetana-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./font/NeueMetana-Bold.woff2') format('woff2'),
+        url('./font/NeueMetana-Bold.woff') format('woff'),
+        url('./font/NeueMetana-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Metana';
+    src: url('./font/NeueMetana-Regular.eot');
+    src: url('./font/NeueMetana-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./font/NeueMetana-Regular.woff2') format('woff2'),
+        url('./font/NeueMetana-Regular.woff') format('woff'),
+        url('./font/NeueMetana-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alternate Gothic No1 D';
+    src: url('./font/AlternateGotNo1D.eot');
+    src: url('./font/AlternateGotNo1D.eot?#iefix') format('embedded-opentype'),
+        url('./font/AlternateGotNo1D.woff2') format('woff2'),
+        url('./font/AlternateGotNo1D.woff') format('woff'),
+        url('./font/AlternateGotNo1D.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Glegoo|Hind:300|IBM+Plex+Sans:100,200,300,400,500,600,700');
+</style>
+
+
+@charset "utf-8";
+
+a {
+  text-decoration: none !important
+}
+
+
+
+.my-nav{
+    border-bottom: 2px solid #151515;
+    margin: 0 80 0 80;
+    height: 88px;   
+    background-color: white;
+}
+
+.bottom-nav{
+    border-top: 2px solid #151515;
+    height: 88px;
+    margin: 0 80 0 80;
+    background-color: white;
+}
+
+.menu-text{
+    color: #151515;
+    font-weight: bold;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-family: 'Neue Metana';
+    text-transform: lowercase;
+    font-size: 24px;
+}
+
+#alto-sx{
+    left: 80px;    
+    font-size: 24px;    
+    top: 30px;
+    position: fixed;
+    z-index: 50;
+}
+
+#alto-dx{
+    right: 80px;    
+    top: 30px;
+    position: fixed;
+    z-index: 50;
+}
+
+#logo{
+    position: absolute;
+    top: 25%;
+    left: 51%;
+    margin-left: -43px !important;  /* 50% of your logo width */
+    display: block;
+}
+
+
+#arrow-left{
+    position: absolute;   
+    left: 0%;    
+    display: block;
+    margin-top: 20px;
+}
+
+
+#arrow-right{
+    position: absolute;   
+    right: 0%;    
+    display: block;
+    margin-top: 20px;    
+}
+
+#arrow-squared{
+    margin-top: 80px;
+}
+
+/* titolo */
+.main-title{
+    margin-top: 240px;
+}
+
+.spiegazione{
+    margin-top: 48px;
+}
+
+
+
+
+h1{
+    text-align: center;
+    font-family: 'Neue Metana';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: transparent;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #151515;
+}
+
+h2{
+     text-align: center;
+    font-family: 'Neue Metana';
+    font-weight: bold;
+    font-size: 44px;
+    color: #151515;
+    letter-spacing: 2px;
+     margin-top: 160px; 
+    
+}
+
+h3{
+    text-align: center;
+    font-family: 'Neue Metana';
+    font-weight: bold;
+    font-size: 26px;
+    color: #151515;
+    text-align: center;
+    width: 100%;
+    position: absolute;       
+    display: block;
+    margin-top: 30px; 
+   
+}
+
+h4{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;    
+}
+
+h5{
+    font-family: 'Alternate Gothic No1 D';
+    text-align: left;
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.ultimo{
+    height: 2000px;
+}
+
+
+.my-primary{
+    font-family: 'Neue Metana';
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    background-color: #151515;
+    border-radius: 0px;    
+    padding: 0;
+}
+
+.link-btn{
+    color: white;
+    text-decoration: none;
+}
+
+.link-btn:hover{
+    text-decoration: none;
+    color: #151515;
+}
+
+
+#btn-home{
+    margin: 120px;
+    height: 200px;
+    width: 640px;  
+}
+
+
+
+.my-primary:hover{
+    background-color: #CCFF66;
+    color: #151515;
+    
+}
+
+.page {
+    margin-top: 80px;
+}
+
+.margin-top-nero{
+    margin: 120 80 0 80;
+    border-top: solid 4px #151515;
+}
+
+.margin-right-nero{
+    
+     border-right: solid 4px #151515;   
+}
+
+#btn-selezione{
+    width: 100%;
+    height: 600px;
+    padding: 160px;    
+}
+
+.raw-scenario{
+    margin: 0 80 0 80;
+    border-top: solid 4px #151515;
+    padding: 56 0 56 0;   
+}
+
+.arrow-right{
+    content: url("../img/arrow_right.svg");
+    position: relative;
+    transition: transform .2s ease-in-out;
+}
+
+.raw-scenario:hover .arrow-right {
+    content: url(../img/arrow_right_yellow.svg);
+    border:none;
+    -ms-transform: translate(50px,); 
+    transform: translate(50px);
+    
+}
+
+.link{
+    text-decoration: none;
+    color: #151515;
+}
+
+.link:hover{
+    text-decoration: none;
+    color: #151515;
+}

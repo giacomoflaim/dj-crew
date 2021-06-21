@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Neue Metana';
+    src: url('NeueMetana-Bold.eot');
+    src: url('NeueMetana-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NeueMetana-Bold.woff2') format('woff2'),
+        url('NeueMetana-Bold.woff') format('woff'),
+        url('NeueMetana-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Metana';
+    src: url('NeueMetana-Regular.eot');
+    src: url('NeueMetana-Regular.eot?#iefix') format('embedded-opentype'),
+        url('NeueMetana-Regular.woff2') format('woff2'),
+        url('NeueMetana-Regular.woff') format('woff'),
+        url('NeueMetana-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
