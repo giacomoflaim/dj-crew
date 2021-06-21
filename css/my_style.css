@@ -50,15 +50,15 @@ a {
 
 .my-nav{
     border-bottom: 2px solid #151515;
-    margin: 0 80 0 80;
-    height: 88px;   
+    margin: 0 40 0 40;
+    height: 72px;   
     background-color: white;
 }
 
 .bottom-nav{
     border-top: 2px solid #151515;
-    height: 88px;
-    margin: 0 80 0 80;
+    height: 72px;
+    margin: 0 40 0 40;
     background-color: white;
 }
 
@@ -75,21 +75,21 @@ a {
 #alto-sx{
     left: 80px;    
     font-size: 24px;    
-    top: 30px;
+    top: 20px;
     position: fixed;
     z-index: 50;
 }
 
 #alto-dx{
     right: 80px;    
-    top: 30px;
+    top: 20px;
     position: fixed;
     z-index: 50;
 }
 
 #logo{
     position: absolute;
-    top: 25%;
+    top: 22%;
     left: 51%;
     margin-left: -43px !important;  /* 50% of your logo width */
     display: block;
@@ -100,7 +100,7 @@ a {
     position: absolute;   
     left: 0%;    
     display: block;
-    margin-top: 20px;
+    margin-top: 14px;
 }
 
 
@@ -108,20 +108,20 @@ a {
     position: absolute;   
     right: 0%;    
     display: block;
-    margin-top: 20px;    
+    margin-top: 14px;    
 }
 
 #arrow-squared{
-    margin-top: 80px;
+    margin-top:32px;
 }
 
 /* titolo */
 .main-title{
-    margin-top: 240px;
+    margin-top: 160px;
 }
 
 .spiegazione{
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 
@@ -132,7 +132,7 @@ h1{
     font-family: 'Neue Metana';
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 72px;
     color: transparent;
     letter-spacing: 2px;
     -webkit-text-stroke-width: 2px;
@@ -160,7 +160,7 @@ h3{
     width: 100%;
     position: absolute;       
     display: block;
-    margin-top: 30px; 
+    margin-top: 22px; 
    
 }
 
