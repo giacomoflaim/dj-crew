@@ -2,9 +2,9 @@
 @font-face {
     font-family: 'NeueMetana';
     src:
-        url('./font/NeueMetana-Bold.woff2') format('woff2'),
-        url('./font/NeueMetana-Bold.woff') format('woff'),
-        url('./font/NeueMetana-Bold.ttf') format('truetype');
+        url('../fonts/NeueMetana-Bold.woff2') format('woff2'),
+        url('../fonts/NeueMetana-Bold.woff') format('woff'),
+        url('../fonts/NeueMetana-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -12,20 +12,19 @@
 @font-face {
     font-family: 'NeueMetana';
     src:
-        url('./fonts/NeueMetana-Regular.woff2') format('woff2'),
-        url('./fonts/NeueMetana-Regular.woff') format('woff'),
-        url('./fonts/NeueMetana-Regular.ttf') format('truetype');
+        url('../fonts/NeueMetana-Regular.woff2') format('woff2'),
+        url('../fonts/NeueMetana-Regular.woff') format('woff'),
+        url('../fonts/NeueMetana-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 
 @font-face {
-    font-family: 'AlternateGothicNo1D';
-
-    src: url('./fonts/AlternateGotNo1D.woff2') format('woff2'),
-        url('./fonts/AlternateGotNo1D.woff') format('woff'),
-        url('./fonts/AlternateGotNo1D.ttf') format('truetype');
+    font-family: 'AlternateGotNo1D';
+    src: url('../fonts/AlternateGotNo1D.woff2') format('woff2'),
+        url('../fonts/AlternateGotNo1D.woff') format('woff'),
+        url('../fonts/AlternateGotNo1D.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,20 +32,12 @@
 
 
 
-<<<<<<< HEAD
 
-
-
-
-
-=======
->>>>>>> parent of bc741cc (update)
 <style>
 @import url('https://fonts.googleapis.com/css?family=Glegoo|Hind:300|IBM+Plex+Sans:100,200,300,400,500,600,700');
 </style>
 
 
-@charset "utf-8";
 
 a {
   text-decoration: none !important
@@ -205,7 +196,7 @@ h4{
 }
 
 h5{
-    font-family: 'AlternateGothicNo1D';
+    font-family: 'AlternateGotNo1D';
     text-align: left;
     font-weight: bold;
     font-size: 48px;
@@ -213,7 +204,7 @@ h5{
 }
 
 h6{
-    font-family: 'AlternateGothicNo1D';
+    font-family: 'AlternateGotNo1D';
     text-align: left;
     font-weight: bold;
     font-size: 24px;
