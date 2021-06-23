@@ -4,9 +4,7 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="small-ticket---indicatori" transform="translate(-424.000000, -635.000000)">
             <g id="Group-Copy-4" transform="translate(424.000000, 636.000000)">
-                <text id="?" font-family="AlternateGotNo1D" font-size="16" font-weight="normal" line-spacing="34" fill="#151515">
-                    <tspan x="10.4" y="18">?</tspan>
-                </text>
+                <path d="M13.7505,14.523 L13.7505,13.022 C13.7505,11.654 13.8645,11.065 14.2255,10.381 C15.3465,8.215 15.3655,8.177 15.3655,7.417 C15.3655,6.087 14.4725,5.194 13.1425,5.194 C11.8885,5.194 11.0525,5.954 10.6725,7.474 L12.1545,7.968 C12.4205,7.113 12.6865,6.771 13.0475,6.771 C13.3705,6.771 13.6365,7.018 13.6365,7.303 C13.6365,7.569 13.5795,7.778 13.1805,8.671 C12.3445,10.6701304 12.2907684,10.7918166 12.2876765,12.2951325 L12.2875,14.523 L13.7505,14.523 Z M13.8835,18 L13.8835,16.1 L12.1165,16.1 L12.1165,18 L13.8835,18 Z" id="?" fill="#151515" fill-rule="nonzero"></path>
                 <rect id="Rectangle" stroke="#151515" stroke-width="2" x="1" y="0" width="24" height="24"></rect>
             </g>
         </g>
