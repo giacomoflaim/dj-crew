@@ -89,10 +89,11 @@ a {
 
 #logo{
     position: absolute;
-    top: 22%;
-    left: 51%;
+    top: 24%;
+    left: 51.5%;
     margin-left: -43px !important;  /* 50% of your logo width */
     display: block;
+    height: 40px;
 }
 
 
@@ -101,6 +102,28 @@ a {
     left: 0%;    
     display: block;
     margin-top: 14px;
+}
+
+#arrow-bottom-right{
+    
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    margin-left: -43px !important;  /* 50% of your logo width */
+    display: block;
+    height: 40px;
+    transform: rotate(0deg);
+    content: url("../img/arrow_right.svg");
+    max-height: 32px;
+    transition: transform .2s ease-in-out;
+}
+
+.bottom-nav:hover #arrow-bottom-right {
+    content: url(../img/arrow_right_yellow.svg);
+    max-height: 32px;
+    border:none;
+    -ms-transform: translate(32px); 
+    transform: translate(32px);    
 }
 
 
@@ -146,8 +169,11 @@ h2{
     font-size: 44px;
     color: #151515;
     letter-spacing: 2px;
-     margin-top: 160px; 
-    
+     margin-top: 160px;     
+}
+
+.scenario-h2{
+    margin-top: 12px;
 }
 
 h3{
@@ -176,15 +202,24 @@ h5{
     font-family: 'Alternate Gothic No1 D';
     text-align: left;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+h6{
+    font-family: 'Alternate Gothic No1 D';
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
     text-transform: uppercase;
 }
 
 p{
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
     font-weight: 400;
+    margin-bottom: 0px;
 }
 
 .ultimo{
@@ -234,24 +269,24 @@ p{
 
 .margin-top-nero{
     margin: 120 80 0 80;
-    border-top: solid 4px #151515;
+    border-top: solid 2px #151515;
 }
 
 .margin-right-nero{
     
-     border-right: solid 4px #151515;   
+     border-right: solid 2px #151515;   
+     border-right: solid 2px #151515;   
 }
 
 #btn-selezione{
     width: 100%;
-    height: 600px;
-    padding: 160px;    
+    height: 400px;
+    padding: 120px;    
 }
 
-.raw-scenario{
-    margin: 0 80 0 80;
-    border-top: solid 4px #151515;
-    padding: 56 0 56 0;   
+.row-scenario{
+    border-top: solid 2px #151515;
+    height: 20%;  
 }
 
 .arrow-right{
@@ -260,12 +295,23 @@ p{
     transition: transform .2s ease-in-out;
 }
 
-.raw-scenario:hover .arrow-right {
+.row-scenario:hover{
+    background-color: #151515;
+}
+
+.row-scenario:hover .arrow-right {
     content: url(../img/arrow_right_yellow.svg);
     border:none;
     -ms-transform: translate(50px,); 
-    transform: translate(50px);
-    
+    transform: translate(50px);    
+}
+
+.row-scenario:hover h5 {
+    color: #CCFF66;  
+}
+
+.row-scenario:hover p {
+    color: white;  
 }
 
 .link{
@@ -276,4 +322,49 @@ p{
 .link:hover{
     text-decoration: none;
     color: #151515;
+}
+
+.scenario-box{
+    
+    padding: 16 32 16 32;
+    border-left: solid 2px #151515;
+    position: relative;
+}
+
+.stroke-box{
+    padding: 32; 
+    border-bottom: solid 2px #151515;    
+    height: 100%;
+}
+
+.scenario-box p, .scenario-box h6{
+    text-align: center;
+}
+
+
+
+.tooltip-my{
+    position: absolute;
+    right: 20;
+    top:0;
+}
+
+
+.tooltip-inner {
+    max-width: 300px;
+    padding: 16px 32px;
+    color: #151515;
+    text-align: left;
+    background-color: white;
+    border-radius: 0;
+    border: solid 2px #151515;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.tooltip-arrow{
+    opacity: 0;
+}
+
+.off-opacity{
+    opacity: 0.2;
 }
