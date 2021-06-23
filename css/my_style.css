@@ -1,10 +1,11 @@
+@charset "utf-8";
 
 @font-face {
     font-family: 'NeueMetana';
     src:
-        url('./font/NeueMetana-Bold.woff2') format('woff2'),
-        url('./font/NeueMetana-Bold.woff') format('woff'),
-        url('./font/NeueMetana-Bold.ttf') format('truetype');
+        url('./fonts/NeueMetana-Bold.woff2') format('woff2'),
+        url('./fonts/NeueMetana-Bold.woff') format('woff'),
+        url('../fonts/NeueMetana-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -14,7 +15,7 @@
     src:
         url('./font/NeueMetana-Regular.woff2') format('woff2'),
         url('./fonts/NeueMetana-Regular.woff') format('woff'),
-        url('./fonts/NeueMetana-Regular.ttf') format('truetype');
+        url('../fonts/NeueMetana-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,12 +24,15 @@
 
 @font-face {
     font-family: 'AlternateGothicNo1D';
-    src: url('./fonts/AlternateGotNo1D.woff2') format('woff2'),
-        url('./fonts/AlternateGotNo1D.woff') format('woff'),
-        url('./fonts/AlternateGotNo1D.ttf') format('truetype');
-    font-weight: normal;
+    src: url('../fonts/AlternateGotNo1D.woff2') format('woff2'),
+        url('../fonts/AlternateGotNo1D.woff') format('woff'),
+        url('../fonts/AlternateGotNo1D.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
 }
+
+
+
 
 
 
