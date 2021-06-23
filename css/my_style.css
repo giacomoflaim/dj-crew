@@ -13,23 +13,25 @@
 @font-face {
     font-family: 'NeueMetana';
     src:
-        url('./font/NeueMetana-Regular.woff2') format('woff2'),
+        url('./fonts/NeueMetana-Regular.woff2') format('woff2'),
         url('./fonts/NeueMetana-Regular.woff') format('woff'),
-        url('../fonts/NeueMetana-Regular.ttf') format('truetype');
+        url('./fonts/NeueMetana-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 
-
 @font-face {
     font-family: 'AlternateGothicNo1D';
-    src: url('../fonts/AlternateGotNo1D.woff2') format('woff2'),
-        url('../fonts/AlternateGotNo1D.woff') format('woff'),
-        url('../fonts/AlternateGotNo1D.ttf') format('truetype');
-    font-weight: 500;
+    src:
+        url('./fonts/AlternateGotNo1D.ttf') format('truetype'),
+        url('./fonts/AlternateGotNo1D.woff2') format('woff2'),
+        url('./fonts/AlternateGotNo1D.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
+
+
 
 
 
