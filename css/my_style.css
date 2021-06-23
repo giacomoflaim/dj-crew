@@ -1,20 +1,20 @@
 
 @font-face {
-    font-family: 'Neue Metana';
+    font-family: 'NeueMetana';
     src:
-        url('../font/NeueMetana-Bold.woff2') format('woff2'),
-        url('../font/NeueMetana-Bold.woff') format('woff'),
-        url('../font/NeueMetana-Bold.ttf') format('truetype');
+        url('./font/NeueMetana-Bold.woff2') format('woff2'),
+        url('./font/NeueMetana-Bold.woff') format('woff'),
+        url('./font/NeueMetana-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Neue Metana';
+    font-family: 'NeueMetana';
     src:
-        url('../font/NeueMetana-Regular.woff2') format('woff2'),
-        url('../fonts/NeueMetana-Regular.woff') format('woff'),
-        url('../fonts/NeueMetana-Regular.ttf') format('truetype');
+        url('./font/NeueMetana-Regular.woff2') format('woff2'),
+        url('./fonts/NeueMetana-Regular.woff') format('woff'),
+        url('./fonts/NeueMetana-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,10 +22,10 @@
 
 
 @font-face {
-    font-family: 'Alternate Gothic No1 D';
-    src: url('../fonts/AlternateGotNo1D.woff2') format('woff2'),
-        url('../fonts/AlternateGotNo1D.woff') format('woff'),
-        url('../fonts/AlternateGotNo1D.ttf') format('truetype');
+    font-family: 'AlternateGothicNo1D';
+    src: url('./fonts/AlternateGotNo1D.woff2') format('woff2'),
+        url('./fonts/AlternateGotNo1D.woff') format('woff'),
+        url('./fonts/AlternateGotNo1D.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -65,7 +65,7 @@ a {
     font-weight: bold;
     letter-spacing: 0px;
     text-decoration: none;
-    font-family: 'Neue Metana';
+    font-family: 'NeueMetana';
     text-transform: lowercase;
     font-size: 24px;
 }
@@ -150,7 +150,7 @@ a {
 
 h1{
     text-align: center;
-    font-family: 'Neue Metana';
+    font-family: 'NeueMetana';
     font-weight: bold;
     text-transform: uppercase;
     font-size: 72px;
@@ -162,7 +162,7 @@ h1{
 
 h2{
      text-align: center;
-    font-family: 'Neue Metana';
+    font-family: 'NeueMetana';
     font-weight: bold;
     font-size: 44px;
     color: #151515;
@@ -176,7 +176,7 @@ h2{
 
 h3{
     text-align: center;
-    font-family: 'Neue Metana';
+    font-family: 'NeueMetana';
     font-weight: bold;
     font-size: 26px;
     color: #151515;
@@ -197,7 +197,7 @@ h4{
 }
 
 h5{
-    font-family: 'Alternate Gothic No1 D';
+    font-family: 'AlternateGothicNo1D';
     text-align: left;
     font-weight: bold;
     font-size: 48px;
@@ -205,7 +205,7 @@ h5{
 }
 
 h6{
-    font-family: 'Alternate Gothic No1 D';
+    font-family: 'AlternateGothicNo1D';
     text-align: left;
     font-weight: bold;
     font-size: 24px;
@@ -226,7 +226,7 @@ p{
 
 
 .my-primary{
-    font-family: 'Neue Metana';
+    font-family: 'NeueMetana';
     font-size: 32px;
     font-weight: bold;
     color: white;
