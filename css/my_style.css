@@ -125,7 +125,8 @@ a {
     max-height: 32px;
     border:none;
     -ms-transform: translate(32px); 
-    transform: translate(32px);    
+    transform: translate(32px); 
+    cursor: pointer;
 }
 
 
