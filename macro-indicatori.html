@@ -6,153 +6,229 @@
     <title>Scrollama: Sticky Side Example</title>
     <meta name="description" content="Scrollama: Sticky Side Example" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../style.css" />
     
-     
-     <style>
-      #scrolly {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        background-color: #f3f3f3;
-        padding: 1rem;
-      }
-
-      #scrolly > * {
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-      }
-
-
-      article {
-        position: relative;
-        padding: 0 1rem;
-        max-width: 800px;
-      }
-
-
-      figure {
-        position: -webkit-sticky;
-        position: sticky;
-        width: 100%;
-        margin: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        background-color: #8a8a8a;
-        z-index: 0;
-      }
-
-      figure p {
-        text-align: center;
-        padding: 1rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -moz-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        font-size: 8rem;
-        font-weight: 900;
-        color: red;
-      }
-
-      .step {
-        margin: 0 auto 2rem auto;
-        background-color: #3b3b3b;
-        color: #fff;
-      }
-
-      .step:last-child {
-        margin-bottom: 0;
-      }
-
-      .step.is-active {
-        background-color: goldenrod;
-        color: #3b3b3b;
-      }
-
-      .step p {
-        text-align: center;
-        padding: 1rem;
-        font-size: 1.5rem;
-      }
-    </style>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/my_style.css" />
+    <link rel="stylesheet" href="./css/my_scroll.css"/>
+    
+    
+    
+    
+    
+    <script src=".//js/d3.min.js"></script>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src=".//js/scrollama.min.js"></script>
+    
   </head>
 
   <body>
+   <nav class="navbar fixed-top my-nav">    
+    <ul class="nav">           
+        <li><a class="menu-text" id="alto-sx" href="index.html">menu</a></li>
+        <li>
+            <img id="logo" src="./img/log.svg" alt="">
+        </li>
+        <li><a class="menu-text" id="alto-dx" href="methods.html">about</a></li>
+    </ul>    
+</nav>
+
+<div class="fixed-bottom bottom-nav">
+    <div class="col">
+            <img id="arrow-left" src="../img/arrow.svg" alt="">
+    </div>
+    <div class="col">
+        <h3 id="prova">scrolla per continuare</h3>
+    </div>       
+    <div class="col">
+            <img id="arrow-right" src="../img/arrow.svg" alt="">
+    </div>
+</div>
+
+<div class="container-fluid" style="padding: 0 65 0 65;">
+    <div class="row">
+       <div class="col">
+           <h2>i macro-indicatori</h2>
+        </div>
+    </div>
+<!--
+    <div class="row justify-content-center" style="margin-bottom: 50px;">
+       <div class="col-9">
+           <p style="text-align: center;">Impostando gli indicatori per la distribuzione iniziale, determiniamo su quali territori puntiamo maggiormente ad acquisire clienti tramite il nostro nuovo prodotto. <br>Con il nuovo prodotto <b>Small Ticket</b> puntiamo alle aree del Paese che siano al tempo stesso più ricche ed in cui i nostri competitor sono meno presenti.
+           </p>
+        </div>
+    </div>
+-->
     
+    <div class="row" style="margin-top: 64px;">                
+            <div class="col-4 scenario-box" style="border-left:0px;">
+               <div class="row justify-content-center  stroke-box">
+                    <div>
+                       <h6>innovazione</h6>
+                       <p>Innovatività di un territorio in termini di attività di ricerca, privata e pubblica, imprenditorialità, istruzione dei suoi abitanti, utilizzo della tecnologia in ambito privato ed industriale</p>
+                    </div>                
+                </div>
+            </div>
+        
+        
+            <div class="col-4 scenario-box">
+               <div class="row justify-content-center stroke-box">
+                    <div>
+                       <h6 >ricchezza</h6>
+                       <p>Ricchezza intrinseca di un territorio, fondata sul reddito delle persone che lo abitano e sulla disponibilità di asset e risorse di valore presenti in esso (abitazioni, attività commerciali, etc…)</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="col-4 scenario-box">
+               <div class="row justify-content-center stroke-box">
+                   <div>
+                       <h6>attrattività</h6>
+                       <p>Quanto il territorio sia attraente per un lavoratore, in termini di dinamicità e apertura del mercato del lavoro, investimenti, infrastrutture, produttività.</p>
+                   </div>
+                </div>
+            </div>
+                    
+    </div>
+    <div class="row" style="height: 180px;">                
+            <div class="col-4 scenario-box" style="border-left:0px;">
+               
+                <div class="row justify-content-center" style="border-top:0px;">
+                    <div>
+                       <h6>sicurezza</h6>
+                       <p>Grado di sicurezza del territorio, stimato in base ad indici di criminalità ed eventi avversi quali incendi, crolli, incidenti</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="col-4 scenario-box">
+               <div class="row justify-content-center">
+                  <div>
+                       <h6>competizione</h6>
+                       <p>Quanto è conteso il territorio in termini di concorrenza assicurativa, stimato in base alla densità delle agenzie e degli sportelli bancari che distribuiscono prodotti assicurativi.</p>
+                   </div>
+                </div>
+            </div>
+        
+        
+            <div class="col-4 scenario-box">
+              
+               <div class="row justify-content-center">
+                  <div>
+                       <h6>mobilità</h6>
+                       <p>Una misura di quanto il territorio sia movimentato in termini di persone e merci, valutato sul numero di veicoli e sui flussi di spostamento in ingresso, in uscita e all’interno del territorio.</p>
+                   </div>
+                </div>
+            </div>  
+    </div>
+    
+    
+</div>
+   
+   
+   
+   
+   
+   
     <main>
       
-      
+       
+       <!--<section id="intro">
+        <h1 class="intro__hed">Sticky Side Example</h1>
+        <p class="intro__dek">
+          Start scrolling to see how it works.
+        </p>
+      </section>-->
 
-      <div id="scrolly">
+      <section id="scrolly">
         <article>
           <div class="step" data-step="1">
-            <p>STEP 1</p>
+            <h6>COME SONO CALCOLATI I MACRO-INDICATORI?</h6>
+            <p>Ogni macro-indicatore è composto da micro-indicatori estratti database Istat e da altri database pubblici.</p>
           </div>
+          
+          
           <div class="step" data-step="2">
-            <p>STEP 2</p>
+           <p style="margin-bottom: 15px;">Ogni micro-indicatore ha un valore e una polarità:</p>
+            <h6>IL COEFFICENTE</h6>
+            <div class="block_container">
+               <img src="./img/square-size.svg" alt="" style="max-width: 40px; margin-right: 15px;">
+                <p>Il coefficente è rappresentato dalla dimensione del rettangolo</p>
+            </div>
+            <h6 style="margin-top: 15px;">la polarità</h6>
+            <div class="row">
+                <div class="block_container">
+                    <img src="./img/square_pos.svg" alt="" style="min-width: 40px; margin-right: 15px;">
+                    <p>valenza positiva</p>                
+                </div>
+            </div>
+            
+            <div class="row" style="margin-top: 15px;">
+                <div class="block_container">
+                    <img src="./img/square_neg.svg" alt="" style="min-width: 40px; margin-right: 15px;">
+                    <p>valenza negativa</p>                
+                </div>
+            </div>
           </div>
           <div class="step" data-step="3">
-            <p>STEP 3</p>
+              <h6>I micro INDICATORI</h6>
+              <p>La piattaforma permette di esplorare la struttura dei micro indicatori </p>
           </div>
           <div class="step" data-step="4">
-            <p>STEP 4</p>
+             <h6>I micro INDICATORI</h6>
+             <p>Per ogni micro indicatore è possibile esplorare il dettaglio e l'impatto del suo coefficente sul totale del macro-indicatore </p>
+            
           </div>
         </article>
-
-        <figure>
-          <img style="width: 100px; height: 100px;">
+        
+         <figure>
+          <img class="img-scroll-style" src="img/img-scrollitelling/1.svg"/>
         </figure>
-        
-        
+      </section>
+
+      <!--<section id="outro"></section>-->
       
-      </div>
-
-      <section id="outro"></section>
-    
-    
+      
     </main>
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    <!-- <div class='debug'></div> -->
-    <script src="https://unpkg.com/intersection-observer"></script>
-    <script src="https://unpkg.com/scrollama"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-
-    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-    <script src="../stickyfill.min.js"></script>
-    <script src="../scrollama.min.js"></script>
     
-    <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-     
-     
-     <script>
+<div class="container-fluid">
+    
+    <div class="row justify-content-center">
+        <div class="col">
+           <a href="https://tableau-dev.aws.celi.it/#/views/DJViews/TreeMap?:iid=4" class="link-btn">
+            <button type="button" class="btn mx-auto d-block my-primary" id="btn-home">               
+                Esplora gli indicatori                
+            </button>
+            </a>
+        </div>
+        <div class="col">
+           <a href="https://tableau-dev.aws.celi.it/#/views/DJViews/DashboardIndicatori?:iid=2" class="link-btn">
+            <button type="button" class="btn mx-auto d-block my-primary" id="btn-home">               
+                Esplora la dashboard               
+            </button>
+            </a>
+        </div>
+    </div>
+    
+</div>
+
+    
+    <script>
       // using d3 for convenience
       var main = d3.select("main");
       var scrolly = main.select("#scrolly");
       var figure = scrolly.select("figure");
       var article = scrolly.select("article");
-      var step = article.selectAll(".step");
-         
-         
-    var 
-
+      var step = article.selectAll(".step")
       // initialize the scrollama
       var scroller = scrollama();
+      srcs = [
+          "img/img-scrollitelling/1.svg",
+          "img/img-scrollitelling/2.svg",
+          "img/img-scrollitelling/3.svg",
+          "img/img-scrollitelling/4.svg"
+      ];
 
       // generic window resize listener event
       function handleResize() {
@@ -182,7 +258,7 @@
         });
 
         // update graphic based on step
-        figure.select("p").text(response.index + 1);
+        figure.select("img").attr("src", srcs[response.index]);
       }
 
       function setupStickyfill() {
@@ -203,8 +279,8 @@
         scroller
           .setup({
             step: "#scrolly article .step",
-            offset: 0.33,
-            debug: true
+            offset: 0.53,
+            debug: false
           })
           .onStepEnter(handleStepEnter);
 

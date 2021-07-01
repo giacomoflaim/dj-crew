@@ -47,7 +47,7 @@ a {
 
 .my-nav{
     border-bottom: 2px solid #151515;
-    margin: 0 40 0 40;
+    margin: 0px 40px; 
     height: 72px;   
     background-color: white;
 }
@@ -55,13 +55,14 @@ a {
 .bottom-nav{
     border-top: 2px solid #151515;
     height: 72px;
-    margin: 0 40 0 40;
+    margin: 0px 40px;
     background-color: white;
 }
 
 .menu-text{
     color: #151515;
     font-weight: bold;
+    letter-spacing: 0px;
     letter-spacing: 0px;
     text-decoration: none;
     font-family: 'NeueMetana';
@@ -223,8 +224,18 @@ p{
     margin-bottom: 0px;
 }
 
+.step p{
+    text-align: left;
+    padding:  6px 0px 0px 0px;
+}
+
 .ultimo{
     height: 2000px;
+}
+
+.block_container{
+    display: flex;
+    justify-content: left;    
 }
 
 
@@ -327,13 +338,13 @@ p{
 
 .scenario-box{
     
-    padding: 16 32 16 32;
+    padding: 16px 32px 16px 32px;
     border-left: solid 2px #151515;
     position: relative;
 }
 
 .stroke-box{
-    padding: 32; 
+    padding: 32px; 
     border-bottom: solid 2px #151515;    
     height: 100%;
 }
@@ -369,3 +380,12 @@ p{
 .off-opacity{
     opacity: 0.2;
 }
+
+
+
+
+
+
+
+
+
